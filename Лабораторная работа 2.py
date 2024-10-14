@@ -1,11 +1,9 @@
 store = ['пятерка', 'лента', 'дикси']
-print('Введите товары через пробел')
-products = input().split(' ')
+products = input('Введите товары через пробел\n').split(' ')
 price = [*range(len(products))]
 for i in range(len(products)):
-    print(
-        f'Введите цены через пробел для {products[i]} в магазинах {" ".join(store)} соответственно')
-    price[i] = input().split(' ')
+    price[i] = input(
+        f'Введите цены через пробел для {products[i]} в магазинах {" ".join(store)} соответственно\n').split(' ')
 
 for i in range(len(store)):
     s = 0
